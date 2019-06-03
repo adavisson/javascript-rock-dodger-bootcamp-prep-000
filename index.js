@@ -130,7 +130,9 @@ function endGame() {
   clearInterval(gameInterval);
 
   var rock = GAME.getElementsByClassName('rock');
-  while
+  while(rock[0]){
+    GAME
+  }
   window.removeEventListener('keydown', moveDodger);
   alert("YOU LOSE!");
 }
