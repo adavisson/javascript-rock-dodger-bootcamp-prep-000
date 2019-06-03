@@ -131,6 +131,7 @@ function endGame() {
   for (let i = 0; i < ROCKS.length; i++){
     GAME.removeChild(ROCKS[i]);
   }
+  
 }
 
 function moveDodger(e) {
