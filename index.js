@@ -74,6 +74,7 @@ function createRock(x) {
    * it to GAME and move it downwards.
    */
 
+   GAME.appendChild(rock);
   /**
    * This function moves the rock. (2 pixels at a time
    * seems like a good pace.)
@@ -99,7 +100,10 @@ function createRock(x) {
     if(checkCollision(rock)){
       endGame();
     }else if(top < 360){
-      
+      rock.style.top = `${top += 2}px`;
+      window.requestAnimationFrame(moveRock());
+    }else{
+      GAME.removeChild(rock);
     }
     
   }
