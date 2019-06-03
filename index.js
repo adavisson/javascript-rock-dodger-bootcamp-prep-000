@@ -133,6 +133,9 @@ function endGame() {
   while(GAME.hasChildNodes()){
     GAME.removeChild(GAME.firstChild);
   }
+  while(ROCKS.length > 0){
+    ROCKS.pop();
+  }
   window.removeEventListener('keydown', moveDodger);
   alert("YOU LOSE!");
 }
