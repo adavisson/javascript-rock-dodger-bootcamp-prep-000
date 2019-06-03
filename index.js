@@ -129,7 +129,6 @@ function createRock(x) {
 function endGame() {
   clearInterval(gameInterval);
 
-  var rock = GAME.getElementsByClassName('rock');
   for(let i = 0; i < ROCKS.length; i++){
     ROCKS[0].remove();
   }
