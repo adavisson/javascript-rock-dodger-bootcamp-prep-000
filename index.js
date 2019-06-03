@@ -131,7 +131,7 @@ function endGame() {
 
   var rock = GAME.getElementsByClassName('rock');
   while(rock[0]){
-    GAME
+    rock[0].parentNode.removeChild(rock[0]);
   }
   window.removeEventListener('keydown', moveDodger);
   alert("YOU LOSE!");
