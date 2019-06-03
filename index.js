@@ -130,12 +130,8 @@ function endGame() {
   clearInterval(gameInterval);
 
   var rock = GAME.getElementsByClassName('rock');
-  while(GAME.hasChildNodes()){
-    GAME.removeChild(GAME.firstChild);
-  }
-  while(ROCKS.length > 0){
-    ROCKS.pop();
-  }
+  ROCKS.remove();
+
   window.removeEventListener('keydown', moveDodger);
   alert("YOU LOSE!");
 }
